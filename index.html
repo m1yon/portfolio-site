@@ -43,6 +43,9 @@
          overflow: hidden;
          background-color: rgb(16, 16, 16);
          margin: 4px 4px 0px 0px;
+         animation: moveUp 1s;
+         opacity: 0;
+         animation-fill-mode: forwards;
        }
 
        .card-img {
@@ -79,8 +82,16 @@
          }
        }
 
-
-
+       @keyframes moveUp {
+         0% {
+           transform: translateY(-1em);
+           opacity: 0;
+         }
+         100% {
+           transform: translateY(0em);
+           opacity: 1;
+         }
+       }
      </style>
 
      <!-- JavaScript -->
@@ -111,12 +122,12 @@
       <!-- Row 1 -->
       <div class="row" style="margin-bottom: -1px;">
         <div class="col-md-5">
-          <div class="card card-inverse view overlay">
+          <div class="card card-inverse view overlay" style="animation-delay: 1s;">
             <img class="card-img" src="img/me.png">
           </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7" style="animation: moveUp 1s; animation-delay: 1.25s; opacity: 0; animation-fill-mode: forwards;">
           <div class="vertical-align-center" style:"padding-left: 30%;">
             <h1 class="display-5">Hi, my name is Michael.</h1>
             <p class="lead" style="color: white;">I'm a 22 year-old college student studying Computer Science at New Mexico State University. Full-Stack Web Development is one of my hobbies.</p>
@@ -128,7 +139,7 @@
       <!-- Row 2 -->
       <div class="row no-gutters">
         <div class="col-md-7">
-          <div class="card card-inverse view overlay">
+          <div class="card card-inverse view overlay" style="animation-delay: 1.5s;">
             <img class="card-img card-img-top" src="img/concert.png" style="width: 110%;">
             <div class="card-img-overlay" style="background-color: #feefea;">
               <div class="vertical-align-center">
@@ -140,7 +151,7 @@
         </div>
 
         <div class="col-md-5">
-          <div class="card card-inverse view overlay">
+          <div class="card card-inverse view overlay"  style="animation-delay: 1.75s;">
             <img class="card-img card-img-top" src="img/concert2.png" style="width: 154%; margin-left: -32%;">
             <div class="card-img-overlay" style="background-color: #2beeb6;">
               <div class="vertical-align-center">
@@ -156,7 +167,7 @@
       <div class="row no-gutters">
         <div class="col-md-4">
           <a href="https://sevonefive.github.io/tribute.html">
-            <div class="card card-inverse view overlay">
+            <div class="card card-inverse view overlay"  style="animation-delay: 2s;">
               <img class="card-img card-img-top" src="img/grimmie.png">
               <div class="card-img-overlay" style="background-color: #feefea;">
                 <div class="vertical-align-center">
@@ -169,7 +180,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card card-inverse view overlay">
+          <div class="card card-inverse view overlay"  style="animation-delay: 2.25s;">
             <a href="https://github.com/sevonefive">
               <img class="card-img card-img-top" src="img/git.png" style="margin-top: -10%;">
               <div class="card-img-overlay" style="background-color: #2beeb6;">
@@ -184,7 +195,7 @@
 
         <div class="col-md-4">
           <a href="http://freecodecamp.com/">
-            <div class="card card-inverse view overlay">
+            <div class="card card-inverse view overlay" style="animation-delay: 2.5s;">
               <img class="card-img card-img-top" src="img/code1.png">
               <div class="card-img-overlay" style="background-color: #feefea;">
                 <div class="vertical-align-center">
@@ -198,7 +209,7 @@
       </div>
 
       <div class="row" style="margin-top: 5%;">
-        <div class="col-md-12 text-center" >
+        <div class="col-md-12 text-center" style="animation: moveUp 1s; animation-delay: 2.75s; opacity: 0; animation-fill-mode: forwards;">
           <a href="https://www.linkedin.com/in/michael-lyon-372230139/"><i class="fab fa-linkedin-in" style="font-size: 35px; margin: 0px 5px 0px 5px;"></i></a>
           <a href="https://twitter.com/sevonefive/"><i class="fab fa-twitter" style="font-size: 35px; margin: 0px 5px 0px 5px;"></i></a>
           <a href="https://github.com/sevonefive/"><i class="fab fa-github" style="font-size: 35px; margin: 0px 5px 0px 5px;"></i></a>
@@ -206,7 +217,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" style="animation: moveUp 1s; animation-delay: 3s; opacity: 0; animation-fill-mode: forwards;">
             <h3 class="lead text-center" style="margin-top: 1%; margin-bottom: 3%; font-size: 16px;">Copyright © 2017. Made by sevonefive</h3>
         </div>
       </div>
