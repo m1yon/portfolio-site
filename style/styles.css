@@ -59,6 +59,11 @@ a:active {color: inherit; text-decoration: none;}
   }
 }
 
+@media (max-width : 600px) {
+  #biggerCard { height: 1000px; }
+  #me { margin-bottom: 2%; }
+}
+
 @keyframes moveUp {
   0% {
     transform: translateY(-1em);
