@@ -69,14 +69,8 @@ a:active {color: inherit; text-decoration: none;}
 }
 
 @media (max-width : 750px) {
-  #biggerCard {
-    height: 300%;
-    width: 300%;
-  }
-  #slightlyBiggerCard {
-    height: 300%;
-    width: 300%;
-  }
+  #biggerCard { height: 1000px; }
+  #slightlyBiggerCard { height: 800px; }
   #me { margin-bottom: 2%; }
 }
 
