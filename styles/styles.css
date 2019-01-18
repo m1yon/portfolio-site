@@ -1,0 +1,149 @@
+body {
+  background-color: #19232c;
+}
+
+h1 {
+  color: #feefea;
+}
+
+h2 {
+  color: #2b3c4c;
+}
+
+h3 {
+  color: #feefea;
+  font-size: 16px;
+}
+
+p {
+  color: #2b3c4c;
+}
+
+i {
+  color: #feefea;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.avi {
+  background-color: red;
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: blue;
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  background-color: purple;
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  margin: 10%;
+  grid-template-areas: "avi header header" "item item item" "item item item" "footer footer footer";
+}
+
+.item {
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0px;
+  grid-area: item;
+  height: 340px;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-items: center;
+}
+
+.animatedLoad {
+  opacity: 0;
+  animation: moveUp 1s;
+  animation-fill-mode: forwards;
+}
+
+.card-img {
+  border-radius: 0px;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.vertical-align-center {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active {
+  color: #2b3c4c !important;
+  background-color: #2beeb6 !important;
+  border-color: #2b3c4c !important;
+}
+
+.social-media {
+  font-size: 35px;
+  margin: 0px 5px 0px 5px;
+}
+
+.display-4 {
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 750px) {
+  #biggerCard {
+    height: 1000px;
+  }
+
+  #slightlyBiggerCard {
+    height: 800px;
+  }
+
+  #me {
+    margin-bottom: 2%;
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

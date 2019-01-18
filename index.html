@@ -14,10 +14,8 @@
 
      -->
 
-     <!-- Bootstrap 4 -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <!-- Link to an external CSS file -->
-     <link rel="stylesheet" type="text/css" href="style\styles.css">
+     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
      <!-- Font Awesome -->
      <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
@@ -25,27 +23,25 @@
   </head>
 
   <body>
-    <div class="container" style="margin-top: 4%;">
-      <!-- Row 1 -->
-      <div class="row" style="margin-bottom: -1px;">
-        <div class="col-md-5">
-          <div class="card card-inverse view overlay animatedLoad" id="me" style="animation-delay: 1s;">
-            <img class="card-img" src="img/me.png">
-          </div>
+    <div class="container">
+      <div class="grid">
+        <!-- Row 1 -->
+        <div class="item avi">
+          <!-- <img class="card-img" src="img/me.png"> -->
         </div>
 
-        <div class="col-md-7 animatedLoad" style="animation-delay: 1.25s;">
-          <div class="vertical-align-center" style:"padding-left: 30%;">
-            <h1 class="display-5">Hi, my name is Michael.</h1>
-            <p class="lead" style="color: white;">I'm a 22 year-old college student studying Computer Science at New Mexico State University. Full-Stack Web Development is one of my hobbies.</p>
-
+        <div class="item header">
+          <div class="animatedLoad" style="animation-delay: 1.25s;">
+            <div class="vertical-align-center" style:"padding-left: 30%;">
+              <h1 class="display-5">Hi, my name is Michael.</h1>
+              <p class="lead" style="color: white;">I'm a 22 year-old college student studying Computer Science at New Mexico State University. Full-Stack Web Development is one of my hobbies.</p>
+            </div>
           </div>
         </div>
-      </div>
+      
 
-      <!-- Row 2 -->
-      <div class="row no-gutters">
-        <div class="col-md-7">
+        <!-- Row 2 -->
+        <div class="item">
           <div class="card card-inverse view overlay animatedLoad" style="animation-delay: 1.5s;">
             <img class="card-img card-img-top" src="img/concert.png" id="biggerCard" style="width: 110%;">
             <div class="card-img-overlay" style="background-color: #feefea;">
@@ -57,8 +53,8 @@
           </div>
         </div>
 
-        <div class="col-md-5">
-          <div class="card card-inverse view overlay animatedLoad"  style="animation-delay: 1.75s;">
+        <div class="item">
+          <div class="card-inverse view overlay animatedLoad"  style="animation-delay: 1.75s;">
             <img class="card-img card-img-top" src="img/concert2.png" style="width: 154%; margin-left: -32%;">
             <div class="card-img-overlay" style="background-color: #2beeb6;">
               <div class="vertical-align-center">
@@ -68,26 +64,22 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Row 3 -->
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <a href="https://sevonefive.github.io/fcc-tribute/">
-            <div class="card card-inverse view overlay animatedLoad"  style="animation-delay: 2s;">
-              <img class="card-img card-img-top" src="img/grimmie.png">
-              <div class="card-img-overlay" style="background-color: #feefea;">
-                <div class="vertical-align-center">
-                  <h2 class="text-center display-4">Tribute Page</h2>
-                  <p class="text-center lead">A tribute page for popular singer Christina Grimmie.</p>
-                </div>
+        <!-- Row 3 -->
+        <div class="item">
+          <div class="card-inverse view overlay animatedLoad"  style="animation-delay: 2s;">
+            <img class="card-img card-img-top" src="img/grimmie.png">
+            <div class="card-img-overlay" style="background-color: #feefea;">
+              <div class="vertical-align-center">
+                <h2 class="text-center display-4">Tribute Page</h2>
+                <p class="text-center lead">A tribute page for popular singer Christina Grimmie.</p>
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card card-inverse view overlay animatedLoad"  style="animation-delay: 2.25s;">
+        <div class="item">
+          <div class="card-inverse view overlay animatedLoad"  style="animation-delay: 2.25s;">
             <a href="https://github.com/sevonefive">
               <img class="card-img card-img-top" src="img/git.png" style="margin-top: -10%;">
               <div class="card-img-overlay" style="background-color: #2beeb6;">
@@ -100,33 +92,32 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <a href="http://freecodecamp.com/">
-            <div class="card card-inverse view overlay animatedLoad" style="animation-delay: 2.5s;">
-              <img class="card-img card-img-top" src="img/code1.png">
-              <div class="card-img-overlay" style="background-color: #feefea;">
-                <div class="vertical-align-center">
-                  <h2 class="text-center display-4">FreeCodeCamp</h1>
-                  <p class="text-center lead">Great resource to learn web development.</p>
-                </div>
+        <div class="item">
+          <div class="card-inverse view overlay animatedLoad" style="animation-delay: 2.5s;">
+            <img class="card-img card-img-top" src="img/code1.png">
+            <div class="card-img-overlay" style="background-color: #feefea;">
+              <div class="vertical-align-center">
+                <h2 class="text-center display-4">FreeCodeCamp</h1>
+                <p class="text-center lead">Great resource to learn web development.</p>
               </div>
             </div>
-          </a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="col-md-12 text-center animatedLoad" style="animation-delay: 2.75s;">
+            <a href="https://www.linkedin.com/in/michael-lyon-372230139/"><i class="fab fa-linkedin-in social-media"></i></a>
+            <a href="https://twitter.com/sevonefive/"><i class="fab fa-twitter social-media"></i></a>
+            <a href="https://github.com/sevonefive/"><i class="fab fa-github social-media"></i></a>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="col-md-12 animatedLoad" style="animation-delay: 3s;">
+              <h3 class="lead text-center" style="margin-top: 1%; margin-bottom: 3%; font-size: 16px;">Copyright © 2017. Made by sevonefive</h3>
+          </div>
         </div>
       </div>
-
-      <div class="row" style="margin-top: 5%;">
-        <div class="col-md-12 text-center animatedLoad" style="animation-delay: 2.75s;">
-          <a href="https://www.linkedin.com/in/michael-lyon-372230139/"><i class="fab fa-linkedin-in social-media"></i></a>
-          <a href="https://twitter.com/sevonefive/"><i class="fab fa-twitter social-media"></i></a>
-          <a href="https://github.com/sevonefive/"><i class="fab fa-github social-media"></i></a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 animatedLoad" style="animation-delay: 3s;">
-            <h3 class="lead text-center" style="margin-top: 1%; margin-bottom: 3%; font-size: 16px;">Copyright © 2017. Made by sevonefive</h3>
-        </div>
       </div>
     </div>
 
