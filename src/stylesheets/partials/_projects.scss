@@ -1,29 +1,24 @@
 .project1 {
     @include item;
-    background-color: green;
     grid-area: project1;
 }
 
 .project2 {
     @include item;
-    background-color: orange;
     grid-area: project2;
 }
 
 .project3 {
     @include item;
-    background-color: white;
     grid-area: project3;
 }
 
 .project4 {
     @include item;
-    background-color: white;
     grid-area: project4;
 }
 
 .project5 {
     @include item;
-    background-color: white;
     grid-area: project5;
 }

@@ -1,5 +1,6 @@
 .footer {
-    @include item;
-    background-color: purple;
-    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0%;
+    width: 100%;
 }

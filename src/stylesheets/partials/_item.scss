@@ -1,3 +1,12 @@
 @mixin item {
-    justify-self: stretch;
+    @include blur(3);
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    height: auto;
+    width: 110%;
 }

@@ -1,5 +1,15 @@
-h1 { color: $off-white; }
-h2 { color: $light-navy; }
-h3 { color: $off-white; font-size: 16px; }
-p { color: $light-navy; }
-i { color: $off-white; }
+h1 { 
+    color: $off-white; 
+    font-family: $open-sans;
+}
+
+h2 {
+    color: $off-white;
+    font-family: $source-sans-pro;
+    font-weight: 200;
+}
+
+p {
+    color: transparentize($off-white, .75); 
+    font-family: $source-sans-pro;
+}

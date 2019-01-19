@@ -1,1 +1,16 @@
 @import "modules/all";
+
+// Vendor
+@import "vendor/_blur";
+
+// Partials
+@import "partials/_body";
+@import "partials/_typography";
+@import "partials/_item";
+@import "partials/_avi";
+@import "partials/_footer";
+@import "partials/_grid";
+@import "partials/_header";
+@import "partials/_projects";
+@import "partials/_projects-info";
+@import "partials/social-media";

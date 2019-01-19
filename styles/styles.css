@@ -1,84 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200");
 body {
   background-color: #19232c;
 }
 
 h1 {
   color: #feefea;
+  font-family: "Open Sans", sans-serif;
 }
 
 h2 {
-  color: #2b3c4c;
-}
-
-h3 {
   color: #feefea;
-  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
 }
 
 p {
-  color: #2b3c4c;
+  color: rgba(254, 239, 234, 0.25);
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-i {
-  color: #feefea;
+img {
+  height: auto;
+  width: 110%;
 }
 
 .avi {
-  justify-self: stretch;
-  background-color: red;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: avi;
+}
+.avi:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
 }
 
 .footer {
-  justify-self: stretch;
-  background-color: purple;
-  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin: 1% 0%;
+  width: 100%;
 }
 
 .grid {
   display: grid;
-  grid-template-areas: "avi header header" "project1 project2 project2" "project3 project4 project5" "footer footer footer";
-  grid-auto-columns: 30%;
-  grid-auto-rows: 15rem;
+  grid-template-areas: "avi avi header header header header" "project1 project1 project1 project2 project2 project2" "project3 project3 project4 project4 project5 project5";
+  grid-auto-columns: 15%;
+  grid-auto-rows: 19rem;
   grid-gap: 0.5rem;
   justify-content: center;
-  margin: 7rem 15rem;
+  margin: 7rem 13rem;
 }
 
 .header {
-  justify-self: stretch;
-  background-color: blue;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
   grid-area: header;
+  padding: 0.5rem;
+}
+.header:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
+}
+
+h1, h2 {
+  margin: 0;
 }
 
 .project1 {
-  justify-self: stretch;
-  background-color: green;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: project1;
+}
+.project1:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
 }
 
 .project2 {
-  justify-self: stretch;
-  background-color: orange;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: project2;
+}
+.project2:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
 }
 
 .project3 {
-  justify-self: stretch;
-  background-color: white;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: project3;
+}
+.project3:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
 }
 
 .project4 {
-  justify-self: stretch;
-  background-color: white;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: project4;
+}
+.project4:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
 }
 
 .project5 {
-  justify-self: stretch;
-  background-color: white;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
   grid-area: project5;
+}
+.project5:hover img {
+  -webkit-filter: blur(3px);
+  /* Chrome, Safari */
+  -ms-filter: blur(3px);
+  /* IE12? */
+  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+  /* Firefox, Safari, Chrome*/
+  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+  /* IE9 */
+}
+
+.project1-info {
+  display: none;
+  position: absolute;
+  width: 30%;
+  height: 75%;
+  padding-top: 2%;
+}
+
+.project1:hover .project1-info {
+  display: block;
+}
+
+.social-media {
+  color: #feefea;
+  font-size: 1.5rem;
+  margin: 0% 1%;
 }
 
 /*# sourceMappingURL=styles.css.map */

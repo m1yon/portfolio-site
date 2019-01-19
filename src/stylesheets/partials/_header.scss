@@ -1,5 +1,12 @@
 .header {
     @include item;
-    background-color: blue;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
     grid-area: header;
+    padding: $xs-size;
+}
+
+h1, h2 {
+    margin: 0;
 }

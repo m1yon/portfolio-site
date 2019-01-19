@@ -1,13 +1,12 @@
 .grid {
     display: grid;
     grid-template-areas:
-        "avi header header"
-        "project1 project2 project2"
-        "project3 project4 project5"
-        "footer footer footer";
-    grid-auto-columns: 30%;
-    grid-auto-rows: 15rem;
-    grid-gap: $xs-size;
+        "avi avi header header header header"
+        "project1 project1 project1 project2 project2 project2"
+        "project3 project3 project4 project4 project5 project5";
+    grid-auto-columns: 15%;
+    grid-auto-rows: $grid-item-length;
+    grid-gap: $grid-gap;
     justify-content: center;
     margin: $m-size $l-size;
   }

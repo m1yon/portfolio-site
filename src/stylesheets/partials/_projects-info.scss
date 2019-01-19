@@ -1,0 +1,7 @@
+.project1-info {
+    @include projects-hover;
+}
+
+.project1:hover .project1-info {
+    display: block;
+}
