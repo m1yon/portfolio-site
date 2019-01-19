@@ -1,0 +1,5 @@
+.footer {
+    @include item;
+    background-color: purple;
+    grid-area: footer;
+}

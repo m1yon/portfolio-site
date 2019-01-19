@@ -23,127 +23,62 @@ i {
   color: #feefea;
 }
 
-a,
-a:hover,
-a:visited,
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-
 .avi {
+  justify-self: stretch;
   background-color: red;
-  grid-area: header;
-  height: 100%;
-  width: 100%;
-}
-
-.header {
-  background-color: blue;
-  grid-area: header;
-  height: 100%;
-  width: 100%;
+  grid-area: avi;
 }
 
 .footer {
+  justify-self: stretch;
   background-color: purple;
   grid-area: footer;
-  height: 100%;
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  margin: 10%;
-  grid-template-areas: "avi header header" "item item item" "item item item" "footer footer footer";
-}
-
-.item {
-  cursor: pointer;
-  border: 0px;
-  border-radius: 0px;
-  grid-area: item;
-  height: 340px;
-  overflow: hidden;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 20% 20% 20%;
-  justify-items: center;
+  grid-template-areas: "avi header header" "project1 project2 project2" "project3 project4 project5" "footer footer footer";
+  grid-auto-columns: 30%;
+  grid-auto-rows: 15rem;
+  grid-gap: 0.5rem;
+  justify-content: center;
+  margin: 7rem 15rem;
 }
 
-.animatedLoad {
-  opacity: 0;
-  animation: moveUp 1s;
-  animation-fill-mode: forwards;
+.header {
+  justify-self: stretch;
+  background-color: blue;
+  grid-area: header;
 }
 
-.card-img {
-  border-radius: 0px;
+.project1 {
+  justify-self: stretch;
+  background-color: green;
+  grid-area: project1;
 }
 
-.card-img-overlay {
-  opacity: 0;
-  transition: opacity 0.25s;
+.project2 {
+  justify-self: stretch;
+  background-color: orange;
+  grid-area: project2;
 }
 
-.vertical-align-center {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
+.project3 {
+  justify-self: stretch;
+  background-color: white;
+  grid-area: project3;
 }
 
-.card:hover .card-img-overlay {
-  opacity: 1;
+.project4 {
+  justify-self: stretch;
+  background-color: white;
+  grid-area: project4;
 }
 
-.btn-outline-secondary:hover,
-.btn-outline-secondary:focus,
-.btn-outline-secondary:active,
-.btn-outline-secondary.active {
-  color: #2b3c4c !important;
-  background-color: #2beeb6 !important;
-  border-color: #2b3c4c !important;
-}
-
-.social-media {
-  font-size: 35px;
-  margin: 0px 5px 0px 5px;
-}
-
-.display-4 {
-  font-size: 35px;
-  margin-bottom: 0px;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1300px;
-  }
-}
-@media (max-width: 750px) {
-  #biggerCard {
-    height: 1000px;
-  }
-
-  #slightlyBiggerCard {
-    height: 800px;
-  }
-
-  #me {
-    margin-bottom: 2%;
-  }
-}
-@keyframes moveUp {
-  0% {
-    transform: translateY(-1em);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0em);
-    opacity: 1;
-  }
+.project5 {
+  justify-self: stretch;
+  background-color: white;
+  grid-area: project5;
 }
 
 /*# sourceMappingURL=styles.css.map */
