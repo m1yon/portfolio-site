@@ -5,8 +5,8 @@
         "project1 project1 project1 project2 project2 project2"
         "project3 project3 project4 project4 project5 project5";
     grid-auto-columns: 15%;
-    grid-auto-rows: $grid-item-length;
-    grid-gap: $grid-gap;
+    grid-auto-rows: 25%;
+    grid-gap: .5%;
     justify-content: center;
-    margin: $m-size $l-size;
+    margin: 5% 5% -6.5% 5%;
   }
