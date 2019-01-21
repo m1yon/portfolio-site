@@ -1,0 +1,33 @@
+@mixin fade-in {
+    animation: 1s ease-out fade-normal;
+    animation-fill-mode: forwards;
+}
+
+@mixin fade-in-short {
+    animation: 1s ease fade-short;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-normal {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-short {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

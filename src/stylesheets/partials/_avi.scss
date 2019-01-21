@@ -1,4 +1,11 @@
 .avi {
-    @include item;
+    @include fade-in;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     grid-area: avi;
+
+    opacity: 0;
+    animation-delay: .25s;
 }

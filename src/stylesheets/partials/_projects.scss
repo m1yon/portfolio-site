@@ -1,24 +1,34 @@
 .project1 {
     @include item;
+    opacity: 0;
+    animation-delay: .65s;
     grid-area: project1;
 }
 
 .project2 {
     @include item;
+    opacity: 0;
+    animation-delay: .85s;
     grid-area: project2;
 }
 
 .project3 {
     @include item;
+    opacity: 0;
+    animation-delay: 1.05s;
     grid-area: project3;
 }
 
 .project4 {
     @include item;
+    opacity: 0;
+    animation-delay: 1.25s;
     grid-area: project4;
 }
 
 .project5 {
     @include item;
+    opacity: 0;
+    animation-delay: 1.45s;
     grid-area: project5;
 }

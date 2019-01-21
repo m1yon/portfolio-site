@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200");
+@keyframes fade-normal {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-short {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   background-color: #19232c;
 }
@@ -29,28 +49,26 @@ img {
 }
 
 .avi {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
   grid-area: avi;
-}
-.avi:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
+  opacity: 0;
+  animation-delay: 0.25s;
 }
 
 .footer {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   margin: 1% 0%;
   width: 100%;
+  opacity: 0;
+  animation-delay: 1.65s;
 }
 
 .grid {
@@ -64,6 +82,8 @@ img {
 }
 
 .header {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
@@ -83,17 +103,32 @@ img {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
-
-h1, h2 {
+.header h1 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
+  opacity: 0;
   margin: 0;
+  animation-delay: 0.45s;
+}
+.header h2 {
+  animation: 1s ease fade-short;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin: 0;
+  animation-delay: 1.1s;
 }
 
 .project1 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 0.65s;
   grid-area: project1;
 }
 .project1:hover img {
@@ -105,13 +140,18 @@ h1, h2 {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
 
 .project2 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 0.85s;
   grid-area: project2;
 }
 .project2:hover img {
@@ -123,13 +163,18 @@ h1, h2 {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
 
 .project3 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 1.05s;
   grid-area: project3;
 }
 .project3:hover img {
@@ -141,13 +186,18 @@ h1, h2 {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
 
 .project4 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 1.25s;
   grid-area: project4;
 }
 .project4:hover img {
@@ -159,13 +209,18 @@ h1, h2 {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
 
 .project5 {
+  animation: 1s ease-out fade-normal;
+  animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 1.45s;
   grid-area: project5;
 }
 .project5:hover img {
@@ -177,6 +232,7 @@ h1, h2 {
   /* Firefox, Safari, Chrome*/
   filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
   /* IE9 */
+  opacity: 0.5;
 }
 
 .project1-info {
