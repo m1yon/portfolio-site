@@ -1,7 +1,14 @@
 @mixin projects-hover {
     display: none;
     position: absolute;
-    width: 30%;
-    height: 75%;
+    width: 40rem;
+    height: 15rem;
     padding-top: 2%;
+
+    h1 {
+        margin-bottom: .5rem;
+    }
+    p {
+        color: $off-white;
+    }
 }

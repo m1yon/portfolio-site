@@ -19,6 +19,10 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
 img {
   height: auto;
   width: 110%;
@@ -178,9 +182,15 @@ h1, h2 {
 .project1-info {
   display: none;
   position: absolute;
-  width: 30%;
-  height: 75%;
+  width: 40rem;
+  height: 15rem;
   padding-top: 2%;
+}
+.project1-info h1 {
+  margin-bottom: 0.5rem;
+}
+.project1-info p {
+  color: #feefea;
 }
 
 .project1:hover .project1-info {
@@ -191,6 +201,31 @@ h1, h2 {
   color: #feefea;
   font-size: 1.5rem;
   margin: 0% 1%;
+}
+
+.tag {
+  border: 1px solid #feefea;
+  border-radius: 5px;
+  color: #feefea;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.button {
+  border: 1px solid #feefea;
+  background: none;
+  border-radius: 5px;
+  color: #feefea;
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 0.15rem;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
