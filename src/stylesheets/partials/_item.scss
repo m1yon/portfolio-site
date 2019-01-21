@@ -1,11 +1,20 @@
 @mixin item {
-    @include blur(3);
-    @include fade-in;
+    @include fade-in-trans;
     align-items: flex-start;
     display: flex;
     justify-content: center;
     overflow: hidden;
+
+    &:hover div {
+        @include fade-in;
+    }
+
+    &:hover img {
+        @include blur(3); 
+    }
 }
+
+
 
 img {
     height: auto;

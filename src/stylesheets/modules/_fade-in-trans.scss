@@ -1,9 +1,9 @@
-@mixin fade-in {
+@mixin fade-in-trans {
     animation: 1s ease-out fade-normal;
     animation-fill-mode: forwards;
 }
 
-@mixin fade-in-short {
+@mixin fade-in-trans-short {
     animation: 1s ease fade-short;
     animation-fill-mode: forwards;
 }

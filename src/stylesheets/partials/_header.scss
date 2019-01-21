@@ -7,14 +7,14 @@
     padding: $xs-size;
     
     h1 {
-        @include fade-in;
+        @include fade-in-trans;
         opacity: 0;
         margin: 0;
         animation-delay: .45s;
     }
 
     h2 {
-        @include fade-in-short;
+        @include fade-in-trans-short;
         opacity: 0;
         margin: 0;
         animation-delay: 1.1s;
