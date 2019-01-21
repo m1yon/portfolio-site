@@ -5,16 +5,28 @@
     justify-content: center;
     overflow: hidden;
 
-    &:hover div {
-        @include fade-in;
+    // Desktop Hover Effects
+    @media only screen and (min-width: $mobile-width) {
+        &:hover div {
+            @include fade-in;
+        }
+    
+        &:hover img {
+            @include blur(3);
+            @include bg-fade; 
+        }
     }
-
-    &:hover img {
-        @include blur(3); 
+    
+    // Disable Hover Effects for Mobile
+    @media only screen and (max-width: $mobile-width) {
+        div {
+            display: flex;
+        }
+        img {
+            opacity: 0.5;
+        }
     }
 }
-
-
 
 img {
     height: auto;

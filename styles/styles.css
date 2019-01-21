@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200");
-@keyframes fade-normal {
+@keyframes fade-in-normal {
   0% {
     opacity: 0;
     transform: translateY(-4rem);
@@ -9,7 +9,7 @@
     transform: translateY(0);
   }
 }
-@keyframes fade-short {
+@keyframes fade-in-short {
   0% {
     opacity: 0;
     transform: translateY(-1rem);
@@ -19,7 +19,7 @@
     transform: translateY(0);
   }
 }
-@keyframes fade-out {
+@keyframes bg-fade {
   0% {
     opacity: 1;
   }
@@ -67,7 +67,7 @@ img {
 }
 
 .avi {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -98,8 +98,15 @@ img {
   margin: 5% 5% -6.5% 5%;
 }
 
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-areas: "avi avi avi avi avi avi" "header header header header header header" "project1 project1 project1 project1 project1 project1" "project2 project2 project2 project2 project2 project2" "project3 project3 project3 project3 project3 project3" "project4 project4 project4 project4 project4 project4" "project5 project5 project5 project5 project5 project5";
+    grid-auto-rows: 8%;
+    grid-gap: 0.5%;
+  }
+}
 .header {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -111,30 +118,41 @@ img {
   grid-area: header;
   padding: 0.5rem;
 }
-.header:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .header:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .header:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.header:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .header div {
+    display: flex;
+  }
+  .header img {
+    opacity: 0.5;
+  }
 }
 .header h1 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   opacity: 0;
   margin: 0;
   animation-delay: 0.45s;
 }
 .header h2 {
-  animation: 1s ease fade-short;
+  animation: 1s ease fade-in-short;
   animation-fill-mode: forwards;
   opacity: 0;
   margin: 0;
@@ -142,7 +160,7 @@ img {
 }
 
 .project1 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -152,24 +170,35 @@ img {
   animation-delay: 0.65s;
   grid-area: project1;
 }
-.project1:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .project1:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .project1:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.project1:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .project1 div {
+    display: flex;
+  }
+  .project1 img {
+    opacity: 0.5;
+  }
 }
 
 .project2 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -179,24 +208,35 @@ img {
   animation-delay: 0.85s;
   grid-area: project2;
 }
-.project2:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .project2:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .project2:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.project2:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .project2 div {
+    display: flex;
+  }
+  .project2 img {
+    opacity: 0.5;
+  }
 }
 
 .project3 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -206,24 +246,35 @@ img {
   animation-delay: 1.05s;
   grid-area: project3;
 }
-.project3:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .project3:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .project3:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.project3:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .project3 div {
+    display: flex;
+  }
+  .project3 img {
+    opacity: 0.5;
+  }
 }
 
 .project4 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -233,24 +284,35 @@ img {
   animation-delay: 1.25s;
   grid-area: project4;
 }
-.project4:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .project4:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .project4:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.project4:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .project4 div {
+    display: flex;
+  }
+  .project4 img {
+    opacity: 0.5;
+  }
 }
 
 .project5 {
-  animation: 1s ease-out fade-normal;
+  animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
   align-items: flex-start;
   display: flex;
@@ -260,20 +322,31 @@ img {
   animation-delay: 1.45s;
   grid-area: project5;
 }
-.project5:hover div {
-  animation: 0.5s ease-out fade-in;
-  animation-fill-mode: forwards;
+@media only screen and (min-width: 800px) {
+  .project5:hover div {
+    animation: 0.5s ease-out fade-in;
+    animation-fill-mode: forwards;
+  }
+  .project5:hover img {
+    -webkit-filter: blur(3px);
+    /* Chrome, Safari */
+    -ms-filter: blur(3px);
+    /* IE12? */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
+    /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
+    /* IE9 */
+    animation: 0.5s ease-out bg-fade;
+    animation-fill-mode: forwards;
+  }
 }
-.project5:hover img {
-  -webkit-filter: blur(3px);
-  /* Chrome, Safari */
-  -ms-filter: blur(3px);
-  /* IE12? */
-  filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><filter id="blur"><feGaussianBlur stdDeviation="3" /></filter></svg>#blur');
-  /* Firefox, Safari, Chrome*/
-  filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius);
-  /* IE9 */
-  opacity: 0.5;
+@media only screen and (max-width: 800px) {
+  .project5 div {
+    display: flex;
+  }
+  .project5 img {
+    opacity: 0.5;
+  }
 }
 
 .project1-info {
@@ -281,8 +354,10 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
   width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
 .project1-info h1 {
   margin-top: 0;
@@ -291,14 +366,17 @@ img {
 .project1-info p {
   color: #feefea;
 }
-
-.project1:hover .project1-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
+@media only screen and (max-width: 800px) {
+  .project1-info {
+    display: none;
+  }
 }
 
+@media only screen and (min-width: 800px) {
+  .project1:hover .project1-info {
+    display: flex;
+  }
+}
 .social-media {
   color: #feefea;
   font-size: 1.5rem;

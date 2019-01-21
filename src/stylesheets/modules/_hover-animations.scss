@@ -1,13 +1,9 @@
-@mixin hover {
-    animation: .5s ease-out fade-out;
-}
-
-@mixin fade-in {
-    animation: .5s ease-out fade-in;
+@mixin bg-fade {
+    animation: .5s ease-out bg-fade;
     animation-fill-mode: forwards;
 }
 
-@keyframes fade-out {
+@keyframes bg-fade {
     0% {
         opacity: 1;
     }
@@ -15,6 +11,11 @@
     100% {
         opacity: .5;
     }
+}
+
+@mixin fade-in {
+    animation: .5s ease-out fade-in;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fade-in {

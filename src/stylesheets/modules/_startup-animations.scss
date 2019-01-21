@@ -1,14 +1,14 @@
 @mixin fade-in-trans {
-    animation: 1s ease-out fade-normal;
+    animation: 1s ease-out fade-in-normal;
     animation-fill-mode: forwards;
 }
 
 @mixin fade-in-trans-short {
-    animation: 1s ease fade-short;
+    animation: 1s ease fade-in-short;
     animation-fill-mode: forwards;
 }
 
-@keyframes fade-normal {
+@keyframes fade-in-normal {
     0% {
         opacity: 0;
         transform: translateY(-4rem);
@@ -20,7 +20,7 @@
     }
 }
 
-@keyframes fade-short {
+@keyframes fade-in-short {
     0% {
         opacity: 0;
         transform: translateY(-1rem);

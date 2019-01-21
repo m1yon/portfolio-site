@@ -8,5 +8,20 @@
     grid-auto-rows: 25%;
     grid-gap: .5%;
     justify-content: center;
-    margin: 5% 5% -6.5% 5%;
-  }
+    margin: 5% 5% -6.5% 5%;  
+}
+
+@media only screen and (max-width: $mobile-width) {
+    .grid {
+        grid-template-areas:
+        "avi avi avi avi avi avi"
+        "header header header header header header"
+        "project1 project1 project1 project1 project1 project1"
+        "project2 project2 project2 project2 project2 project2"
+        "project3 project3 project3 project3 project3 project3"
+        "project4 project4 project4 project4 project4 project4"
+        "project5 project5 project5 project5 project5 project5";
+        grid-auto-rows: 8%;
+        grid-gap: .5%;
+    }
+}
