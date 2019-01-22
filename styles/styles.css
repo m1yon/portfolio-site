@@ -355,7 +355,7 @@ img {
   }
 }
 
-.project1-info {
+.project-info {
   display: none;
   position: absolute;
   width: 100%;
@@ -365,24 +365,24 @@ img {
   justify-content: center;
   align-self: center;
 }
-.project1-info h1 {
+.project-info h1 {
   margin-top: 0;
   margin-bottom: 1%;
 }
-.project1-info p {
+.project-info p {
   color: #feefea;
 }
 @media only screen and (max-width: 800px) {
-  .project1-info {
+  .project-info {
     display: none;
   }
 }
-
 @media only screen and (min-width: 800px) {
-  .project1:hover .project1-info {
+  .project1:hover .project-info, .project2:hover .project-info, .project3:hover .project-info, .project4:hover .project-info, .project5:hover .project-info {
     display: flex;
   }
 }
+
 .social-media {
   color: #feefea;
   font-size: 1.5rem;
