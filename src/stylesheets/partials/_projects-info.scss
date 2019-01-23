@@ -1,20 +1,8 @@
 .project-info {
     @include projects-hover;
-    width: 90%;
-
+    
+    align-self: center;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
-
-    @media only screen and (max-width: $mobile-width) {
-        display: none;
-    }
-
-    // Desktop Hover Effects
-    @media only screen and (min-width: $mobile-width) {
-        .project1:hover &, .project2:hover &, .project3:hover &,
-        .project4:hover &, .project5:hover & {
-            display: flex;
-        }
-    }
+    width: 90%;
 }

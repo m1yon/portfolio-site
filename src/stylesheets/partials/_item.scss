@@ -6,9 +6,10 @@
     overflow: hidden;
 
     // Desktop Hover Effects
-    @media only screen and (min-width: $mobile-width) {
+    @media only screen and (min-width: $tablet-width) {
         &:hover div {
             @include fade-in;
+            display: flex;
         }
     
         &:hover img {
@@ -17,8 +18,8 @@
         }
     }
     
-    // Disable Hover Effects for Mobile
-    @media only screen and (max-width: $mobile-width) {
+    // Disable Hover Effects for Tablet/Mobile
+    @media only screen and (max-width: $tablet-width) {
         div {
             display: flex;
         }

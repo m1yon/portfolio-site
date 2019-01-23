@@ -1,11 +1,11 @@
 html {
     font-size: $global-font-size;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: $mobile-width) {
         font-size: $global-font-size + 2;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $tablet-width) {
         font-size: $global-font-size + 4;
     }
 }
