@@ -4,7 +4,7 @@
     flex-direction: column;
     display: flex;
     grid-area: header;
-    padding: $xs-size;
+    padding: .4rem;
     
     h1 {
         @include fade-in-trans;

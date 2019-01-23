@@ -5,9 +5,9 @@
         "project1 project1 project1 project2 project2 project2"
         "project3 project3 project4 project4 project5 project5";
     grid-auto-rows: 25rem;
-    grid-gap: .5%;
+    grid-gap: .5rem;
     justify-content: center;
-    margin: 5%;
+    margin: 5rem;
     padding-bottom: 4rem;
 }
 
@@ -24,6 +24,6 @@
         grid-template-columns: 100%;
         grid-gap: .5%;
         padding-bottom: 7rem;
-
+        margin: 1rem;
     }
 }
