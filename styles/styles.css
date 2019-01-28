@@ -76,8 +76,14 @@ a {
 }
 
 img {
-  height: 30rem;
-  width: auto;
+  height: auto;
+  width: 110%;
+}
+@media only screen and (max-width: 1024px) {
+  img {
+    height: 40rem;
+    width: auto;
+  }
 }
 
 .avi {
