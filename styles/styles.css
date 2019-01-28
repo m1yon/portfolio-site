@@ -77,7 +77,7 @@ a {
 
 img {
   height: auto;
-  width: 110%;
+  width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   img {
@@ -167,6 +167,10 @@ img {
     opacity: 0.5;
   }
 }
+.header img {
+  height: 110%;
+  width: auto;
+}
 .header h1 {
   animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
@@ -220,6 +224,10 @@ img {
     opacity: 0.5;
   }
 }
+.project1 img {
+  height: 110%;
+  width: auto;
+}
 
 .project2 {
   animation: 1s ease-out fade-in-normal;
@@ -258,6 +266,10 @@ img {
   .project2 img {
     opacity: 0.5;
   }
+}
+.project2 img {
+  height: 110%;
+  width: auto;
 }
 
 .project3 {
@@ -298,6 +310,10 @@ img {
     opacity: 0.5;
   }
 }
+.project3 img {
+  height: 110%;
+  width: auto;
+}
 
 .project4 {
   animation: 1s ease-out fade-in-normal;
@@ -337,6 +353,10 @@ img {
     opacity: 0.5;
   }
 }
+.project4 img {
+  height: 110%;
+  width: auto;
+}
 
 .project5 {
   animation: 1s ease-out fade-in-normal;
@@ -375,6 +395,10 @@ img {
   .project5 img {
     opacity: 0.5;
   }
+}
+.project5 img {
+  height: 110%;
+  width: auto;
 }
 
 .project-info {

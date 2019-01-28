@@ -28,12 +28,16 @@
             opacity: 0.5;
         }
     }
+
+    img {
+        height: 110%;
+        width: auto;
+    }
 }
 
 img {
-    
     height: auto;
-    width: 110%;
+    width: 100%;
 
     @media only screen and (max-width: $tablet-width) {
         height: 40rem;
