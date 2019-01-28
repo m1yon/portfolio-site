@@ -8,4 +8,14 @@
 
     opacity: 0;
     animation-delay: .25s;
+
+    img {
+        height: 35rem;
+        width: auto;
+    }
+
+    @media only screen and (max-width: $tablet-width) {
+        height: 100%;
+        width: auto;
+    }
 }

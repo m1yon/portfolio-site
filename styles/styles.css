@@ -75,17 +75,6 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
-img {
-  height: auto;
-  width: 100%;
-}
-@media only screen and (max-width: 1024px) {
-  img {
-    height: 40rem;
-    width: auto;
-  }
-}
-
 .avi {
   animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
@@ -96,6 +85,16 @@ img {
   grid-area: avi;
   opacity: 0;
   animation-delay: 0.25s;
+}
+.avi img {
+  height: 35rem;
+  width: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .avi {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .footer {
@@ -114,8 +113,7 @@ img {
   grid-auto-rows: 25rem;
   grid-gap: 0.5rem;
   justify-content: center;
-  margin: 5rem;
-  padding-bottom: 4rem;
+  margin: 5% 15% 5% 15%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -139,6 +137,10 @@ img {
   display: flex;
   grid-area: header;
   padding: 0.4rem;
+}
+.header img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .header:hover div {
@@ -167,10 +169,6 @@ img {
     opacity: 0.5;
   }
 }
-.header img {
-  height: 110%;
-  width: auto;
-}
 .header h1 {
   animation: 1s ease-out fade-in-normal;
   animation-fill-mode: forwards;
@@ -196,6 +194,10 @@ img {
   opacity: 0;
   animation-delay: 0.65s;
   grid-area: project1;
+}
+.project1 img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .project1:hover div {
@@ -224,10 +226,6 @@ img {
     opacity: 0.5;
   }
 }
-.project1 img {
-  height: 110%;
-  width: auto;
-}
 
 .project2 {
   animation: 1s ease-out fade-in-normal;
@@ -239,6 +237,10 @@ img {
   opacity: 0;
   animation-delay: 0.85s;
   grid-area: project2;
+}
+.project2 img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .project2:hover div {
@@ -267,10 +269,6 @@ img {
     opacity: 0.5;
   }
 }
-.project2 img {
-  height: 110%;
-  width: auto;
-}
 
 .project3 {
   animation: 1s ease-out fade-in-normal;
@@ -282,6 +280,10 @@ img {
   opacity: 0;
   animation-delay: 1.05s;
   grid-area: project3;
+}
+.project3 img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .project3:hover div {
@@ -310,10 +312,6 @@ img {
     opacity: 0.5;
   }
 }
-.project3 img {
-  height: 110%;
-  width: auto;
-}
 
 .project4 {
   animation: 1s ease-out fade-in-normal;
@@ -325,6 +323,10 @@ img {
   opacity: 0;
   animation-delay: 1.25s;
   grid-area: project4;
+}
+.project4 img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .project4:hover div {
@@ -353,10 +355,6 @@ img {
     opacity: 0.5;
   }
 }
-.project4 img {
-  height: 110%;
-  width: auto;
-}
 
 .project5 {
   animation: 1s ease-out fade-in-normal;
@@ -368,6 +366,10 @@ img {
   opacity: 0;
   animation-delay: 1.45s;
   grid-area: project5;
+}
+.project5 img {
+  height: 40rem;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .project5:hover div {
@@ -395,10 +397,6 @@ img {
   .project5 img {
     opacity: 0.5;
   }
-}
-.project5 img {
-  height: 110%;
-  width: auto;
 }
 
 .project-info {

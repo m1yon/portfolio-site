@@ -5,6 +5,11 @@
     justify-content: center;
     overflow: hidden;
 
+    img {
+        height: 40rem;
+        width: auto;
+    }
+
     // Desktop Hover Effects
     @media only screen and (min-width: $tablet-width) {
         &:hover div {
@@ -27,20 +32,5 @@
         img {
             opacity: 0.5;
         }
-    }
-
-    img {
-        height: 110%;
-        width: auto;
-    }
-}
-
-img {
-    height: auto;
-    width: 100%;
-
-    @media only screen and (max-width: $tablet-width) {
-        height: 40rem;
-        width: auto;
     }
 }
