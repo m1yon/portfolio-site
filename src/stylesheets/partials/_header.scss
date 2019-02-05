@@ -19,5 +19,15 @@
         margin: 0;
         animation-delay: 1.1s;
     }
+
+    a {
+        font-family: $source-sans-pro;
+        text-decoration: none;
+        color: $cyan;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 

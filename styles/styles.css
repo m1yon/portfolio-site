@@ -183,6 +183,14 @@ a {
   margin: 0;
   animation-delay: 1.1s;
 }
+.header a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: #2beeb6;
+}
+.header a:hover {
+  text-decoration: underline;
+}
 
 .project1 {
   animation: 1s ease-out fade-in-normal;
