@@ -21,9 +21,14 @@
 
 .project4 {
     @include item;
+    
     opacity: 0;
     animation-delay: 1.25s;
     grid-area: project4;
+
+    img {
+        top: -20%;
+    }
 }
 
 .project5 {

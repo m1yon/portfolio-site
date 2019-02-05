@@ -8,6 +8,10 @@ html {
     @media screen and (max-width: $tablet-width) {
         font-size: $global-font-size + 4;
     }
+
+    @media screen and (min-width: 1920px) {
+        font-size: $global-font-size + 4;
+    }
 }
 
 body { 

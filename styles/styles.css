@@ -48,6 +48,11 @@ html {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
+  }
+}
 
 body {
   background-color: #19232c;
@@ -139,7 +144,9 @@ a {
   padding: 0.4rem;
 }
 .header img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -204,7 +211,9 @@ a {
   grid-area: project1;
 }
 .project1 img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -247,7 +256,9 @@ a {
   grid-area: project2;
 }
 .project2 img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -290,7 +301,9 @@ a {
   grid-area: project3;
 }
 .project3 img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -333,7 +346,9 @@ a {
   grid-area: project4;
 }
 .project4 img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
@@ -363,6 +378,9 @@ a {
     opacity: 0.5;
   }
 }
+.project4 img {
+  top: -20%;
+}
 
 .project5 {
   animation: 1s ease-out fade-in-normal;
@@ -376,7 +394,9 @@ a {
   grid-area: project5;
 }
 .project5 img {
-  height: 40rem;
+  position: absolute;
+  bottom: -40%;
+  height: 38rem;
   width: auto;
 }
 @media only screen and (min-width: 1024px) {
