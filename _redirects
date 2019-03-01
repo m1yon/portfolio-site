@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://sevonefive.com/* https://mlyon.dev/:splat 301!
+https://www.mlyon.dev/* https://mlyon.dev/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://mlyon-portfolio.netlify.com/* https://mlyon.dev/:splat 301!
